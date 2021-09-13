@@ -1,3 +1,19 @@
 # mnist-with-error-analysis
-Using the data set from mnist and different models like decision-tree,svm,logistic regression to analyze the best model that can fit with data set
-Accompany with the error-analysis to see how could we improve the accuracy and performance
+## Purpose
+
+## Dependencies
+- pandas
+- numpy
+- requests
+- json
+- sklearn
+- matplotlib
+- pytorch
+- pillow
+- plotly
+
+## Model fitting
+### Model choosing
+
+### Error analysis 
+## Results
