@@ -2,8 +2,6 @@
 ## Purpose
 Computer vision has become one of the most important area in computer science. During this project, we'll collected and pre-processed images from MNIST and fashion-MNIST images.You will see the performance of each model (Logistic Regression,svm, decision_tree, lightGBM) when they met hand-written/clothes images.In the end, this project will show how to do the error analysis over multi-labels. We will analyzed error on handwritten/clothes images and discovered several images are always easier to mis-classify than other numbers.
 
-<img src= "image/fashion_sample.png">
-
 ## Dependencies
 - pandas
 - numpy
@@ -37,4 +35,8 @@ As always, the module sklearn provided us various models to use directly. We wil
 
 ## Why not Mnist?
 As you can see, Mnist is a well-established data set and has been overused in the data-science area. We can easily get 97% accuracy without fix too many issues.
+
+
+<img src= "image/fashion_sample.png">
+
 ## Results
