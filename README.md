@@ -22,19 +22,19 @@ We could do some pre-processing and fit with the models that we choose.
 ## Model fitting
 ### Model choosing
 As always, the module sklearn provided us various models to use directly. We will use Logistic Regression,svm, decision_tree, lightGBM at here to see their performance.
-
 - Logistic Regression
-
+<img src= "image/minst_log.png">
 - SVM
-
+<img src= "image/mnist_svm.png">
 - Decision_Tree
-
+<img src= "image/mnist_tree.png">
 - LightGBM
+<img src= "image/mnist-lgb.png">
 
 ### Error analysis 
-
+Based on the report above, we can see that LightGBM and SVM performed pretty well on Mnist, which reached 96% and 94% accuracy respectively. However, the accuracy of Logistic regression and Decision tree do not meet our expectation. We can compare the predict value and the test set to see what could we do to improve the accuracy.
 ## Why not Mnist?
-As you can see, Mnist is a well-established data set and has been overused in the data-science area. We can easily get 97% accuracy without fix too many issues.
+As you can see, Mnist is a well-established data set and has been overused in the data-science area. We can easily get 96% accuracy without fix any issues.
 
 
 <img src= "image/fashion_sample.png">
