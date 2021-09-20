@@ -9,7 +9,7 @@ Computer vision has become one of the most important area in computer science. D
 - json
 - sklearn
 - matplotlib
-- pytorch(MNIST and fashion-MNIST)
+- pytorch(MNIST http://yann.lecun.com/exdb/mnist/ and fashion-MNIST https://github.com/zalandoresearch/fashion-mnist)
 - pillow
 - plotly
 ## Collect and Pre-Processed Images
@@ -32,7 +32,12 @@ As always, the module sklearn provided us various models to use directly. We wil
 <img src= "image/mnist-lgb.png">
 
 ### Error analysis 
-Based on the report above, we can see that LightGBM and SVM performed pretty well on Mnist, which reached 96% and 94% accuracy respectively. However, the accuracy of Logistic regression and Decision tree do not meet our expectation. We can compare the predict value and the test set to see what could we do to improve the accuracy.
+Based on the report above, we can see that LightGBM and SVM performed pretty well on Mnist, which reached 96% and 94% accuracy respectively. However, the accuracy of Logistic regression and Decision tree do not meet our expectation. We can compare the predict value and the test set to see what could we do to improve the accuracy. Here is the plot for error anaylysis when using the Logistic Regression model.
+<img src= "image/error-analysis.png">
+The x-axis represent the error,the y-axis repensted the number of errors for each hand-written digit.For instance, we can find that when we predict number 0, number 8 is the most common error that the model would made.
+After switching to decision_tree model, the plot for error analysis should be like:
+<img src= "image/error-analysis-tree.png">
+In this spot, we can see different model has different xxxxx.
 ## Why not Mnist?
 As you can see, Mnist is a well-established data set and has been overused in the data-science area. We can easily get 96% accuracy without fix any issues.
 
