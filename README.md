@@ -10,7 +10,7 @@ Computer vision has become one of the most important area in computer science. D
 - pytorch(MNIST http://yann.lecun.com/exdb/mnist/ and fashion-MNIST https://github.com/zalandoresearch/fashion-mnist)
 - pillow
 - plotly
-## Collect and Pre-Processed Images
+## Collect and Pre-Process Images
 The Mnist database is a large database which contained 70000 images of hand-written numbers(from 0 to 9).We can import the dataset from Pytorch directly. Mnist helped us split the train set and test set already(60000:10000). Here is the overview of the Mnist data set.
 
 
