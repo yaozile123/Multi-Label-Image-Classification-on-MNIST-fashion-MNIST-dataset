@@ -37,7 +37,7 @@ The x-axis represent the error,the y-axis repensted the number of errors for eac
 After switching to decision_tree model, the plot for error analysis should be like:
 <img src= "image/error-analysis-tree.png">
 In this spot, we can see decision tree performed badly on predicting digit 3. 
-## Why not Mnist?
+## Advanced to Fashion-Mnist
 As you can see, Mnist is a well-established data set and has been overused in the data-science area. We can easily get 96% accuracy without fix any issues.
 
 
