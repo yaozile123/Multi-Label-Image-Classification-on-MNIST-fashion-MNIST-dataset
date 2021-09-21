@@ -17,9 +17,9 @@ The Mnist database is a large database which contained 70000 images of hand-writ
 <img src= "image/mnist_sample.png">
 We could do some pre-processing and fit with the models that we choose.
 
-## Model fitting
+## Model Challenging
 ### Model choosing
-As always, the module sklearn provided us various models to use directly. We will use Logistic Regression,svm, decision_tree, lightGBM at here to see their performance.
+Sklearn provided us various models to use directly. We will use Logistic Regression,svm, decision_tree, lightGBM at here to see their performance.
 - Logistic Regression
 <img src= "image/minst_log.png">
 - SVM
@@ -28,9 +28,10 @@ As always, the module sklearn provided us various models to use directly. We wil
 <img src= "image/mnist_tree.png">
 - LightGBM
 <img src= "image/mnist-lgb.png">
+Based on the report above, we can see that LightGBM and SVM performed pretty well on Mnist, which reached 96% and 94% accuracy respectively. 
 
 ### Error analysis 
-Based on the report above, we can see that LightGBM and SVM performed pretty well on Mnist, which reached 96% and 94% accuracy respectively. However, the accuracy of Logistic regression and Decision tree do not meet our expectation. We can compare the predict value and the test set to see what could we do to improve the accuracy. Here is the plot for error anaylysis when using the Logistic Regression model.
+However, the accuracy of Logistic regression and Decision tree do not meet our expectation. We can compare the predict value and the test set to see what could we do to improve the accuracy. Here is the plot for error anaylysis when using the Logistic Regression model.
 <img src= "image/error-analysis.png">
 The x-axis represent the error,the y-axis repensted the number of errors for each hand-written digit.For instance, we can find that when we predict number 0, number 8 is the most common error that the model would made. That is because people has different writing style. In some cases, the hand written digit 8 is similar to 0 which might lead some mikstakes for the model to predict the result.
 After switching to decision_tree model, the plot for error analysis should be like:
