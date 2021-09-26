@@ -51,6 +51,10 @@ Below is the overview of Fashion-Mnist dataset.
 
 <img src= "image/fashion_minst_overview.png">
 
+By looking as the pca plot of Fashion-Mnist, we could see the correlation and distribution between each classes.
+
+<img src= "image/pca_fashion.png">
+
 ### Performance
 
 - Logistic Regression
@@ -65,4 +69,5 @@ Below is the overview of Fashion-Mnist dataset.
 - LightGBM
 <img src= "image/fashion_lgb.png">
 
-## Results
+### Results 
+After saw the classification reports of each model, we found that the accuracy of our models both decreased. The main reason for that is because the dimension of our image increased. Sometimes it is pretty hard for the real human to distinguish the difference between some clothes.The accuracy of Logistic regression and Decision tree are still the two worst model based on performance.
