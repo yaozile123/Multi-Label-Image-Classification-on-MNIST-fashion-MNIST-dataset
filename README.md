@@ -13,8 +13,11 @@ Computer vision has become one of the most important area in computer science. D
 ## Collect and Pre-Process Images
 The Mnist database is a large database which contained 70000 images of hand-written numbers(from 0 to 9).We can import the dataset from Pytorch directly. Mnist helped us split the train set and test set already(60000:10000). Here is the overview of the Mnist data set.
 
-
 <img src= "image/mnist_sample.png">
+
+Here is the distribution of handwritten digits in mnist dataset.
+<img src= "image/pca_mnist.png">
+
 We could do some pre-processing and fit with the models that we choose.
 
 ## Model Challenging
@@ -38,9 +41,9 @@ After switching to decision_tree model, the plot for error analysis should be li
 <img src= "image/error-analysis-tree.png">
 In this spot, we can see decision tree performed badly on predicting digit 3. 
 ## Advanced to Fashion-Mnist
-As you can see, Mnist is a well-established data set and has been overused in the data-science area. We can easily get 96% accuracy without fix any issues.
+As you can see, Mnist is a well-established data set and has been overused in the data-science area. We can easily get 96% accuracy without fix any issues. Data scientists might need use other higher level datasets to test the accuracy of their model. Here I used the fashion-Mnist data set credit by Zalando Research on github (https://github.com/zalandoresearch). Different from the traditional mnist dataset, the fashion-Mnist consist of 10 classes cloth image. Below is the overview of Fashion-Mnist dataset.
 
 
-<img src= "image/fashion_sample.png">
+<img src= "image/mnist_sample1.png">
 
 ## Results
