@@ -71,3 +71,11 @@ By looking as the pca plot of Fashion-Mnist, we could see the correlation and di
 
 ### Results 
 After saw the classification reports of each model, we found that the accuracy of our models both decreased. The main reason for that is because the dimension of our image increased. Sometimes it is pretty hard for the real human to distinguish the difference between some clothes.The accuracy of Logistic regression and Decision tree are still the two worst model based on performance.
+
+<img src= "image/error_fashion_log.png">
+
+By ploting the error analysis graph of using logistic regression, we could find that the model had bad predictions on Shirt(label:6) and Coat(label:4).
+
+<img src= "image/error_fashion_tree.png">
+
+The decision_tree seems like don't know how to distinguish Shirt(label:6) and T-shirt/top(label:0).
