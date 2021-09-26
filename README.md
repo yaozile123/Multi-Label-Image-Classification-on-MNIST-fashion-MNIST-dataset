@@ -25,10 +25,13 @@ We could do some pre-processing and fit with the models that we choose.
 Sklearn provided us various models to use directly. We will use Logistic Regression,svm, decision_tree, lightGBM at here to see their performance.
 - Logistic Regression
 <img src= "image/minst_log.png">
+
 - SVM
 <img src= "image/mnist_svm.png">
+
 - Decision_Tree
 <img src= "image/mnist_tree.png">
+
 - LightGBM
 <img src= "image/mnist-lgb.png">
 Based on the report above, we can see that LightGBM and SVM performed pretty well on Mnist, which reached 96% and 94% accuracy respectively. 
@@ -41,9 +44,25 @@ After switching to decision_tree model, the plot for error analysis should be li
 <img src= "image/error-analysis-tree.png">
 In this spot, we can see decision tree performed badly on predicting digit 3. 
 ## Advanced to Fashion-Mnist
-As you can see, Mnist is a well-established data set and has been overused in the data-science area. We can easily get 96% accuracy without fix any issues. Data scientists might need use other higher level datasets to test the accuracy of their model. Here I used the fashion-Mnist data set credit by Zalando Research on github (https://github.com/zalandoresearch). Different from the traditional mnist dataset, the fashion-Mnist consist of 10 classes cloth image. Below is the overview of Fashion-Mnist dataset.
+As you can see, Mnist is a well-established data set and has been overused in the data-science area. We can easily get 96% accuracy without fix any issues. Data scientists might need use other higher level datasets to test the accuracy of their model. Here I used the fashion-Mnist data set credit by Zalando Research on github (https://github.com/zalandoresearch). Different from the traditional mnist dataset, the fashion-Mnist consist of 10 classes cloth image. 
+From 0 to 9, each number represents a class of cloth in fashion_mnist:
 
+Below is the overview of Fashion-Mnist dataset.
 
-<img src= "image/mnist_sample1.png">
+<img src= "image/fashion_minst_overview.png">
+
+### Performance
+
+- Logistic Regression
+<img src= "image/fashion_log.png">
+
+- SVM
+<img src= "image/fashion_svm.png">
+
+- Decision_Tree
+<img src= "image/fashion_tree.png">
+
+- LightGBM
+<img src= "image/fashion_lgb.png">
 
 ## Results
