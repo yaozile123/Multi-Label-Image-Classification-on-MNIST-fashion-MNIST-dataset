@@ -2,14 +2,6 @@
 ## Purpose
 Computer vision has become one of the most important area in computer science. During this project, we'll collected and pre-processed images from MNIST and fashion-MNIST images.You will see the performance of each model (Logistic Regression,svm, decision_tree, lightGBM) when they met hand-written/clothes images.In the end, this project will show how to do the error analysis over multi-labels. We will analyzed error on handwritten/clothes images and discovered several images are always easier to mis-classify than other numbers.
 
-## Dependencies
-- pandas
-- numpy
-- sklearn
-- matplotlib
-- pytorch(MNIST http://yann.lecun.com/exdb/mnist/ and fashion-MNIST https://github.com/zalandoresearch/fashion-mnist)
-- pillow
-- plotly
 ## Collect and Pre-Process Images
 The Mnist database is a large database which contained 70000 images of hand-written numbers(from 0 to 9).We can import the dataset from Pytorch directly. Mnist helped us split the train set and test set already(60000:10000). Here is the overview of the Mnist data set.
 
@@ -79,3 +71,12 @@ By ploting the error analysis graph of using logistic regression, we could find 
 <img src= "image/error_fashion_tree.png">
 
 The decision_tree seems like don't know how to distinguish Shirt(label:6) and T-shirt/top(label:0).
+
+## Dependencies
+- pandas
+- numpy
+- sklearn
+- matplotlib
+- pytorch(MNIST http://yann.lecun.com/exdb/mnist/ and fashion-MNIST https://github.com/zalandoresearch/fashion-mnist)
+- pillow
+- plotly
