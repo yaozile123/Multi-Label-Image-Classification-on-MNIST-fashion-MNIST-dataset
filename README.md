@@ -15,17 +15,9 @@ We could do some pre-processing and fit with the models that we choose.
 ## Model Challenging
 ### Model choosing
 Sklearn provided us various models to use directly. We will use Logistic Regression,svm, decision_tree, lightGBM at here to see their performance.
-- Logistic Regression
-<img src= "image/minst_log.png">
 
-- SVM
-<img src= "image/mnist_svm.png">
 
-- Decision_Tree
-<img src= "image/mnist_tree.png">
-
-- LightGBM
-<img src= "image/mnist-lgb.png">
+<img src= "image/accuracy_comparison-mnist.png" height=400 width=700>
 Based on the report above, we can see that LightGBM and SVM performed pretty well on Mnist, which reached 96% and 94% accuracy respectively. 
 
 ### Error analysis 
@@ -48,18 +40,7 @@ By looking as the pca plot of Fashion-Mnist, we could see the correlation and di
 <img src= "image/pca_fashion.png">
 
 ### Performance
-
-- Logistic Regression
-<img src= "image/fashion_log.png">
-
-- SVM
-<img src= "image/fashion_svm.png">
-
-- Decision_Tree
-<img src= "image/fashion_tree.png">
-
-- LightGBM
-<img src= "image/fashion_lgb.png">
+<img src= "image/accuracy_comparison.png" height=400 width=700>
 
 ### Results 
 After saw the classification reports of each model, we found that the accuracy of our models both decreased. The main reason for that is because the dimension of our image increased. Sometimes it is pretty hard for the real human to distinguish the difference between some clothes.The accuracy of Logistic regression and Decision tree are still the two worst model based on performance.
